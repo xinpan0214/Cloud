@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mycloud="http://schemas.android.com/apk/res/com.gvtv.android.cloud"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.gvtv.android.cloud.view.TitleView
+        android:id="@+id/bindDeviceTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        mycloud:right_visibility="false"
+        mycloud:title="@string/device_bind" >
+    </com.gvtv.android.cloud.view.TitleView>
+
+    <TextView
+        android:id="@+id/accountText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="40.5dp"
+        android:gravity="center_vertical|left"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:text="@string/account_link"
+        android:textColor="@color/email_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/deviceNameText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center_vertical|left"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:text="@string/device_name_link"
+        android:textColor="@color/email_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/deviceNameTipText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center_vertical|left"
+        android:text="@string/device_name_tip"
+        android:textColor="@color/hint_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/deviceStateText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="33dp"
+        android:gravity="center_vertical|left"
+        android:singleLine="false"
+        android:text="@string/device_state_unbinded"
+        android:textColor="@color/email_color"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="71dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/line_color" />
+
+    <Button
+        android:id="@+id/modifyDeviceBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_btn_selector"
+        android:text="@string/modify_device_name"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/unbindBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bind_btn_selector"
+        android:text="@string/unbind_device"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="14dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="@string/unbind_tip"
+        android:textColor="@color/unbind_tip_color"
+        android:textSize="12sp" />
+
+</LinearLayout>

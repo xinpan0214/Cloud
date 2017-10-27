@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="tip_color">#7d7c7c</color>
+    <color name="title_bgcolor">#2089bc</color>
+    
+    
+    <color name="agreement_color">#2089BC</color>
+    <color name="email_color">#373737</color>
+	<color name="hint_color">#7d7c7c</color>
+	<color name="unable_color">#dcdcdb</color>
+	<color name="unable_filename_color">#bbbab8</color>
+	<color name="devider_color">#cccccc</color>
+	
+	<color name="tab_checked_color">#2ab4e1</color>
+	<color name="tab_unchecked_color">#7d7c7c</color>
+	
+	<color name="tab_text_checked_color">#373737</color>
+	<color name="tab_text_unchecked_color">#7d7c7c</color>
+	<color name="tab_bg_color">#e9edef</color>
+	
+	<color name="line_color">#bbbab8</color>
+	
+	<color name="about_line_color">#e1e1e1</color>
+	<color name="unbind_tip_color">#f95353</color>
+	<color name="tab_del_color">#f95353</color>
+	
+	<color name="use_space_flag_color">#ffb71a</color>
+	<color name="avail_space_flag_color">#dddada</color>
+	
+	<color name="use_space_percent_color">#ffffff</color>
+	<color name="avail_space_percent_color">#373737</color>
+	<color name="round_color">#7d7c7c</color>
+	
+	<color name="down_manager_color">#0066ff</color>
+	
+	<color name="app_store_title_color">#ffb71a</color>
+	
+	<color name="appdetail_line_color">#e1e1e1</color>
+	
+</resources>

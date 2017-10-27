@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mycloud="http://schemas.android.com/apk/res/com.gvtv.android.cloud"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.gvtv.android.cloud.view.TitleView
+        android:id="@+id/fileTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        mycloud:right_visibility="false"
+        mycloud:title="@string/file_manager" >
+    </com.gvtv.android.cloud.view.TitleView>
+
+    
+    <View
+        android:id="@+id/downFileView"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fileTitle"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/file_icon01" />
+
+    <Button
+        android:id="@+id/downFileBtn"
+        android:layout_width="143dp"
+        android:layout_height="143dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fileTitle"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/file_manager_selector"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="15dp"
+        android:text="@string/down_file"
+        android:textColor="@color/email_color"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/backupFileView"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fileTitle"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/file_icon02" />
+
+    <Button
+        android:id="@+id/backcpBtn"
+        android:layout_width="143dp"
+        android:layout_height="143dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fileTitle"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/file_manager_selector"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="15dp"
+        android:text="@string/backup_file"
+        android:textColor="@color/filemanager_txt_sel"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/uploadFileView"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/downFileBtn"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/file_icon03" />
+
+    <Button
+        android:id="@+id/uploadBtn"
+        android:layout_width="143dp"
+        android:layout_height="143dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/downFileBtn"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/file_manager_selector"
+        android:enabled="false"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="15dp"
+        android:text="@string/upload_file"
+        android:textColor="@color/unable_color"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/shareFileView"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/backcpBtn"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/file_icon04" />
+
+    <Button
+        android:id="@+id/shareBtn"
+        android:layout_width="143dp"
+        android:layout_height="143dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/backcpBtn"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/file_manager_selector"
+        android:enabled="false"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="15dp"
+        android:text="@string/share_file"
+        android:textColor="@color/unable_color"
+        android:textSize="15sp" />
+
+</RelativeLayout>

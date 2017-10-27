@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mycloud="http://schemas.android.com/apk/res/com.gvtv.android.cloud"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.gvtv.android.cloud.view.TitleView
+        android:id="@+id/downloadfiletitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        mycloud:right_visibility="false"
+        mycloud:title="@string/app_folder" >
+    </com.gvtv.android.cloud.view.TitleView>
+
+    <com.gvtv.android.cloud.view.xlistview.XListView
+        android:id="@+id/xlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/downloadfiletitle"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/appdetail_line_color"
+        android:dividerHeight="2dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" >
+    </com.gvtv.android.cloud.view.xlistview.XListView>
+    
+    <TextView
+        android:id="@+id/tv_nofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/no_file"
+        android:textColor="@color/hint_color"
+        android:textSize="15sp" />
+
+</RelativeLayout>

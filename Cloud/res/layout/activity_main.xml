@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="@dimen/main_logo_width"
+        android:layout_height="@dimen/main_logo_height"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/app_name"
+        android:background="@drawable/login_logo" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="@dimen/main_btn_width"
+        android:layout_height="@dimen/main_btn_height"
+        android:layout_marginTop="@dimen/main_login_btn_margin_top"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/login_btn_selector"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_btn_text_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/main_text_margin_top"
+        android:layout_marginBottom="@dimen/main_text_margin_bottom"
+        android:gravity="center_horizontal"
+        android:text="@string/login_tip"
+        android:textColor="@color/tip_color"
+        android:textSize="@dimen/main_tv_text_size" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="@dimen/main_btn_width"
+        android:layout_height="@dimen/main_btn_height"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/register_btn_selector"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_btn_text_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/main_text_margin_top"
+        android:gravity="center_horizontal"
+        android:text="@string/register_tip"
+        android:textColor="@color/tip_color"
+        android:textSize="@dimen/main_tv_text_size" />
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mycloud="http://schemas.android.com/apk/res/com.gvtv.android.cloud"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.gvtv.android.cloud.view.TitleView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        mycloud:right_visibility="false"
+        mycloud:title="@string/find_pwd" >
+    </com.gvtv.android.cloud.view.TitleView>
+
+    <EditText
+        android:id="@+id/mail_et"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/input_edit_selector"
+        android:hint="@string/fill_email"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColor="@color/email_color"
+        android:textColorHint="@color/hint_color"
+        android:textSize="15sp"
+        android:maxLength="32" />
+    
+    
+    <TextView 
+        android:id="@+id/tv_tips_1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:textColor="@color/email_color"
+        android:text="@string/find_pwd_tip1"
+        android:visibility="invisible"/>
+    
+    
+	<TextView 
+        android:id="@+id/tv_tips_2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/tv_tips_1"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:textColor="@color/email_color"
+        android:text="@string/find_pwd_tip2"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/commit_btn"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="153dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_btn_selector"
+        android:text="@string/commit_email"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+    
+    <RelativeLayout 
+        android:layout_height="45dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/commit_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+        
+        <TextView 
+	        android:id="@+id/tv_tips_3"
+	        android:layout_height="fill_parent"
+	        android:layout_width="wrap_content"
+	        android:gravity="center_vertical"
+	        android:textSize="12sp"
+	        android:textColor="@color/hint_color"
+	        android:text="@string/find_pwd_tip3"
+	        android:visibility="invisible"/>
+        
+        <TextView 
+	        android:id="@+id/tv_tips_4"
+	        android:layout_height="fill_parent"
+	        android:layout_width="wrap_content"
+	        android:gravity="center_vertical"
+	        android:layout_marginLeft="12dp"
+	        android:layout_toRightOf="@id/tv_tips_3"
+	        android:textSize="12sp"
+	        android:textColor="@color/unbind_tip_color"
+	        android:text="@string/find_pwd_tip4"
+	        android:visibility="invisible"/>
+        
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,165 @@
+# view res/layout/activity_appstore.xml #generated:41
+# view res/layout/activity_appstore.xml #generated:56
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:22
+-keep class com.gvtv.android.cloud.CloudApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:134
+-keep class com.gvtv.android.cloud.activity.APPActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:130
+-keep class com.gvtv.android.cloud.activity.APPDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:104
+-keep class com.gvtv.android.cloud.activity.AboutInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:95
+-keep class com.gvtv.android.cloud.activity.AppClassifyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:88
+-keep class com.gvtv.android.cloud.activity.AppStoreActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:74
+-keep class com.gvtv.android.cloud.activity.BackupActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:108
+-keep class com.gvtv.android.cloud.activity.ChangePaswdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:98
+-keep class com.gvtv.android.cloud.activity.CloudManagerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:111
+-keep class com.gvtv.android.cloud.activity.DeviceBindActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:114
+-keep class com.gvtv.android.cloud.activity.DeviceControlActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:126
+-keep class com.gvtv.android.cloud.activity.DeviceRebootActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:118
+-keep class com.gvtv.android.cloud.activity.DeviceStatusControlActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:84
+-keep class com.gvtv.android.cloud.activity.DownloadManagerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:122
+-keep class com.gvtv.android.cloud.activity.DownloadSettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:71
+-keep class com.gvtv.android.cloud.activity.FileActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:67
+-keep class com.gvtv.android.cloud.activity.FileFolderActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:62
+-keep class com.gvtv.android.cloud.activity.FileManagerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class com.gvtv.android.cloud.activity.FindPWDActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:40
+-keep class com.gvtv.android.cloud.activity.GuideActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class com.gvtv.android.cloud.activity.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class com.gvtv.android.cloud.activity.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class com.gvtv.android.cloud.activity.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:91
+-keep class com.gvtv.android.cloud.activity.SearchAppActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:77
+-keep class com.gvtv.android.cloud.activity.SearchDeviceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:80
+-keep class com.gvtv.android.cloud.activity.SearchFromDeviceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class com.gvtv.android.cloud.activity.UserInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:28
+-keep class com.gvtv.android.cloud.activity.WelcomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:138
+-keep class com.gvtv.android.cloud.broadcast.MessageReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:149
+-keep class com.gvtv.android.cloud.provider.AppContentProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:145
+-keep class com.gvtv.android.cloud.service.MessageService { <init>(...); }
+
+# view res/layout/activity_device_status_control.xml #generated:35
+-keep class com.gvtv.android.cloud.view.PercentBar { <init>(...); }
+
+# view res/layout/activity_appstore.xml #generated:47
+# view res/layout/activity_guide.xml #generated:62
+-keep class com.gvtv.android.cloud.view.PointWidget { <init>(...); }
+
+# view res/layout/activity_appdetail.xml #generated:91
+# view res/layout/activity_reboot_device.xml #generated:25
+-keep class com.gvtv.android.cloud.view.ProgressWithText { <init>(...); }
+
+# view res/layout/activity_appclassify.xml #generated:34
+# view res/layout/activity_appstore.xml #generated:21
+-keep class com.gvtv.android.cloud.view.PullToRefreshScrollViewVertical { <init>(...); }
+
+# view res/layout/activity_guide.xml #generated:8
+-keep class com.gvtv.android.cloud.view.ScrollLayout { <init>(...); }
+
+# view res/layout/activity_search_device.xml #generated:50
+-keep class com.gvtv.android.cloud.view.SearchAnim { <init>(...); }
+
+# view res/layout/activity_appclassify.xml #generated:59
+# view res/layout/activity_appstore.xml #generated:87
+# view res/layout/appstore_tab_gridview.xml #generated:2
+-keep class com.gvtv.android.cloud.view.SlippingDisabledGridView { <init>(...); }
+
+# view res/layout/activity_app_main.xml #generated:3
+-keep class com.gvtv.android.cloud.view.SlippingViewPager { <init>(...); }
+
+# view res/layout/activity_about.xml #generated:12
+# view res/layout/activity_app.xml #generated:7
+# view res/layout/activity_appclassify.xml #generated:8
+# view res/layout/activity_appdetail.xml #generated:7
+# view res/layout/activity_appstore.xml #generated:8
+# view res/layout/activity_backupcontacts.xml #generated:7
+# view res/layout/activity_bind_device.xml #generated:8
+# view res/layout/activity_device_bind.xml #generated:8
+# view res/layout/activity_device_control.xml #generated:8
+# view res/layout/activity_device_status_control.xml #generated:9
+# view res/layout/activity_download_manager.xml #generated:8
+# view res/layout/activity_download_setting.xml #generated:8
+# view res/layout/activity_file.xml #generated:8
+# view res/layout/activity_file_folder.xml #generated:8
+# view res/layout/activity_file_manager.xml #generated:9
+# view res/layout/activity_findpwd.xml #generated:8
+# view res/layout/activity_login.xml #generated:9
+# view res/layout/activity_modpwd.xml #generated:8
+# view res/layout/activity_reboot_device.xml #generated:8
+# view res/layout/activity_register.xml #generated:9
+# view res/layout/activity_search_device.xml #generated:8
+# view res/layout/activity_search_from_device.xml #generated:7
+# view res/layout/activity_user_info.xml #generated:8
+-keep class com.gvtv.android.cloud.view.TitleView { <init>(...); }
+
+# view res/layout/activity_appclassify.xml #generated:78
+# view res/layout/activity_appstore.xml #generated:107
+# view res/layout/activity_searchapp.xml #generated:135
+-keep class com.gvtv.android.cloud.view.ViewAddMore { <init>(...); }
+
+# view res/layout/activity_file.xml #generated:88
+# view res/layout/activity_file_folder.xml #generated:16
+# view res/layout/activity_search_from_device.xml #generated:94
+-keep class com.gvtv.android.cloud.view.xlistview.XListView { <init>(...); }
+
+# view res/layout/activity_downloaded_fragment.xml #generated:105
+# view res/layout/activity_downloading_fragment.xml #generated:99
+-keep class com.handmark.pulltorefresh.library.PullToRefreshScrollView { <init>(...); }
+

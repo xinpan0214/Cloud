@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp" >
+    
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="40dp" >
+
+    <CheckBox
+        android:id="@+id/childcheckbox"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/checkbox_selector"
+        android:button="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/childcheckbox"
+        android:layout_centerVertical="true"
+        android:paddingLeft="12dp"
+        android:gravity="center_vertical"
+        android:text="天龙八部第一集"
+        android:textColor="@color/email_color"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/percentText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:paddingLeft="30dp"
+        android:layout_toRightOf="@id/nameText"
+        android:gravity="center_vertical"
+        android:text="15%"
+        android:textColor="@color/email_color"
+        android:textSize="12sp"
+        android:singleLine="true"
+        android:ellipsize="middle" />
+
+    <TextView
+        android:id="@+id/downloadText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="12dp"
+        android:layout_toRightOf="@id/percentText"
+        android:gravity="center_vertical"
+        android:text="105MB/300MB"
+        android:textColor="@color/email_color"
+        android:textSize="12sp"
+        android:singleLine="true"
+        android:ellipsize="middle" />
+
+</RelativeLayout>
+</LinearLayout>

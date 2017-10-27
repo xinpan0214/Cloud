@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@drawable/loading" >
+    
+    <com.gvtv.android.cloud.view.ScrollLayout
+        android:id="@+id/mScrollLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true" >
+        
+
+        <ImageView
+            android:id="@+id/iv_g0"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/guide01"/>
+            
+        <ImageView
+            android:id="@+id/iv_g1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/guide02"/>
+
+       <ImageView
+            android:id="@+id/iv_g2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/guide03"/>
+       
+       <RelativeLayout 
+           android:id="@+id/rlyt3"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent">
+           
+           <ImageView
+	            android:id="@+id/iv_g3"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:contentDescription="@string/app_name"
+	            android:src="@drawable/guide04"/>
+           
+           <Button 
+               android:id="@+id/btn"
+               android:layout_width="175dp"
+	           android:layout_height="45dp"
+	           android:layout_alignParentBottom="true"
+	           android:layout_marginBottom="45dp"
+	           android:background="@null"
+	           android:layout_centerHorizontal="true"/>
+           
+       </RelativeLayout>
+            
+       
+    </com.gvtv.android.cloud.view.ScrollLayout>
+    
+    <com.gvtv.android.cloud.view.PointWidget
+          android:id="@+id/mPointWidget"
+          android:gravity="center"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="30dp"
+          android:layout_centerHorizontal="true" />
+    
+
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mycloud="http://schemas.android.com/apk/res/com.gvtv.android.cloud"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.gvtv.android.cloud.view.TitleView
+        android:id="@+id/registerTitle_register"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        mycloud:right_visibility="false"
+        mycloud:title="@string/register" >
+    </com.gvtv.android.cloud.view.TitleView>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/registerPreLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <EditText
+                android:id="@+id/fillMailEdit"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/input_edit_selector"
+                android:hint="@string/fill_email"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/email_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="15sp"
+                android:maxLength="32" />
+
+            <EditText
+                android:id="@+id/inputSecretEdit"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_edit_selector"
+                android:hint="@string/input_secret"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/email_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="15sp"
+                android:maxLength="16" />
+
+            <EditText
+                android:id="@+id/confirmSecretEdit"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_edit_selector"
+                android:hint="@string/confirm_secret"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/email_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="15sp"
+                android:maxLength="16" />
+
+            <Button
+                android:id="@+id/registerBtn_register"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_btn_selector"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            
+            <RelativeLayout 
+                android:id="@+id/rlyt_agreement"
+                android:layout_height="36dp"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+                
+                <ToggleButton
+		            android:id="@+id/toggle_agreement"
+		            android:layout_width="36dp"
+		            android:layout_height="36dp"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:background="@drawable/checkbox_selector"
+		            android:button="@null"
+		            android:checked="false"
+		            android:clickable="true"
+		            android:contentDescription="@string/app_name"
+		            android:textOff=""
+		            android:textOn="" />
+                
+                <TextView
+	                android:id="@+id/tv_agreement_tip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_toRightOf="@id/toggle_agreement"
+	                android:layout_centerVertical="true"
+	                android:gravity="center_vertical"
+	                android:text="@string/register_agreement_tip"
+	                android:textColor="@color/tip_color"
+	                android:textSize="12sp" />
+
+	            <TextView
+	                android:id="@+id/tv_agreement"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	               	android:layout_centerVertical="true"
+	                android:layout_toRightOf="@id/tv_agreement_tip"
+	                android:gravity="center_vertical"
+	                android:text="@string/register_agreement"
+	                android:textColor="@color/agreement_color"
+	                android:textSize="12sp" />
+                
+            </RelativeLayout>
+            
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/regiterSucLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="69dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="145.5dp"
+                android:layout_marginRight="145.5dp"
+                android:layout_marginTop="39dp"
+                android:contentDescription="@string/app_name"
+                android:background="@drawable/registered_gou" />
+
+            <TextView
+                android:id="@+id/registerOKText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:text="@string/register_success"
+                android:textColor="@color/email_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/activateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="46dp"
+                android:gravity="center_horizontal"
+                android:text="@string/goto_activate"
+                android:textColor="@color/tip_color"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/activateBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="46dp"
+                android:background="@drawable/login_btn_selector"
+                android:text="@string/activate_now"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

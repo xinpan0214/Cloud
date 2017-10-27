@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mycloud="http://schemas.android.com/apk/res/com.gvtv.android.cloud"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.gvtv.android.cloud.view.TitleView
+        android:id="@+id/loginTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        mycloud:right_visibility="false"
+        mycloud:title="@string/login" >
+    </com.gvtv.android.cloud.view.TitleView>
+
+    <EditText
+        android:id="@+id/accountEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/input_edit_selector"
+        android:hint="@string/account"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColor="@color/email_color"
+        android:textColorHint="@color/hint_color"
+        android:textSize="15sp"
+        android:maxLength="32" />
+
+    <EditText
+        android:id="@+id/secretEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_edit_selector"
+        android:hint="@string/secret"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColor="@color/email_color"
+        android:textColorHint="@color/hint_color"
+        android:textSize="15sp"
+        android:maxLength="16" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_btn_selector"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/forgetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/forget_secret"
+        android:textColor="@color/tip_color"
+        android:textSize="12sp" />
+
+</LinearLayout>

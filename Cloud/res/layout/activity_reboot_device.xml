@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mycloud="http://schemas.android.com/apk/res/com.gvtv.android.cloud"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.gvtv.android.cloud.view.TitleView
+        android:id="@+id/restartDeviceTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        mycloud:right_visibility="false"
+        mycloud:title="@string/restart_device" >
+    </com.gvtv.android.cloud.view.TitleView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_below="@id/restartDeviceTitle"
+        android:layout_width="93dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/equipment_pic02" />
+
+    <com.gvtv.android.cloud.view.ProgressWithText
+        android:id="@+id/restartProBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_below="@id/view"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:max="100"
+        android:progress="30"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:progressDrawable="@drawable/progress_horizontal"/>
+    
+     <TextView
+        android:id="@+id/tv_restart"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/view"
+        android:text="@string/restart_device"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="39dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:background="@drawable/login_btn_selector" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/restartProBar"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/restart_tip"
+        android:textColor="@color/tip_color"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginLayout"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/public_promptbox01" >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="21dp"/>
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_height="40dp"
+        android:layout_width="250dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="26dp"
+        android:hint="@string/please_input_cur_pwd"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint_color"
+        android:textSize="15sp"
+        android:layout_below="@id/tv_name"
+        android:maxLength="32"
+        android:background="@drawable/public_promptbox02"/>
+
+    <View
+        android:id="@+id/view_h"
+        android:layout_height="2dp"
+        android:layout_width="fill_parent"
+        android:background="@color/white"
+        android:layout_below="@id/et"
+        android:layout_marginTop="20dp" />
+
+    
+    <LinearLayout
+        android:id="@+id/llyt" 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:layout_below="@id/view_h">
+        
+        <TextView android:id="@+id/unbind"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/unbind"
+            android:background="@color/dialog_unbind_color"/>
+        
+        <View
+	        android:id="@+id/view_v"
+	        android:layout_height="fill_parent"
+	        android:layout_width="2dp"
+	        android:background="@color/white"/>
+        
+          <TextView android:id="@+id/cancel"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/cancel"
+            android:background="@color/dialog_cancel_color"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mycloud="http://schemas.android.com/apk/res/com.gvtv.android.cloud"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.gvtv.android.cloud.view.TitleView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        mycloud:right_visibility="true"
+        mycloud:title="@string/mod_pwd" >
+    </com.gvtv.android.cloud.view.TitleView>
+
+    <FrameLayout
+        android:id="@+id/flyt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title" >
+
+        <RelativeLayout
+            android:id="@+id/rlyt_input_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/email_color"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_1"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/account"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_edit_selector"
+                android:hint="@string/input_new1_pwd"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/email_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="15sp"
+                android:maxLength="16" />
+
+            <EditText
+                android:id="@+id/et_2"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/et_1"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_edit_selector"
+                android:hint="@string/input_new2_pwd"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/email_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="15sp"
+                android:maxLength="16" />
+
+            <Button
+                android:id="@+id/btn_commit"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/et_2"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_btn_selector"
+                android:text="@string/commit_email"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlyt_mod_pwd_end"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/iv_hook"
+                android:layout_width="69dp"
+                android:layout_height="54dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/registered_gou" />
+
+            <TextView
+                android:id="@+id/mod_succeed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_hook"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/pwd_mod_success"
+                android:textColor="@color/email_color"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_modded"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/mod_succeed"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/login_btn_selector"
+                android:text="@string/pwd_mod_end"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

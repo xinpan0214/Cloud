@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_window_focused="false">
+        <!-- 定义当button 处于默认 状态时的形态。-->
+        <shape>
+            <gradient android:startColor="#2ab4e1" android:endColor="#2ab4e1"/>
+            <stroke android:width="0dp" android:color="#333333"/>
+            <corners android:radius="0dp" />
+            <padding android:left="0dp" android:top="0dp"
+               android:bottom="0dp" android:right="0dp" />
+        </shape>
+    </item>
+    
+    <item android:state_pressed="true">
+        <!-- 定义当button 处于pressed 状态时的形态。-->
+        <shape>
+            <gradient android:startColor="#00ffffff" android:endColor="#00ffffff"/>
+            <stroke android:width="0dp" android:color="#2ab4e1" />
+            <corners android:radius="0dp" />
+            <padding android:left="0dp" android:top="0dp"
+                android:bottom="0dp" android:right="0dp" />
+        </shape>
+    </item>
+
+    <item android:state_focused="true">
+        <!-- 定义当button获得focus时的形态-->
+        <shape>
+            <gradient android:startColor="#00ffffff" android:endColor="#00ffffff"/>
+            <stroke android:width="0dp" android:color="#333333"/>
+            <corners android:radius="0dp" />
+            <padding android:left="0dp" android:top="0dp"
+               android:bottom="0dp" android:right="0dp" />
+        </shape>
+    </item>
+</selector>

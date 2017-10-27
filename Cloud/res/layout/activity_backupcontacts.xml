@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mycloud="http://schemas.android.com/apk/res/com.gvtv.android.cloud"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.gvtv.android.cloud.view.TitleView
+        android:id="@+id/bindDeviceTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        mycloud:right_visibility="false"
+        mycloud:title="@string/backup_file" >
+    </com.gvtv.android.cloud.view.TitleView>
+    
+    <ImageView 
+        android:id="@+id/iv_clock"
+        android:layout_height="109dp"
+        android:layout_width="109dp"
+        android:layout_below="@id/bindDeviceTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/file_pic01"/>
+    
+    <TextView android:id="@+id/tv_backup_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_below="@id/iv_clock"
+        android:textColor="@color/email_color"
+        android:layout_marginTop="20dp"
+        android:text="@string/no_backup_file"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+    
+    <TextView android:id="@+id/tv_backup_filename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/hint_color"
+        android:layout_below="@id/tv_backup_last"
+        android:layout_marginTop="16dp"
+        android:text="@string/backup_filename"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/tv_backup_filename"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/line_color" />
+
+    <Button
+        android:id="@+id/btn_backup"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/line"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/login_btn_selector"
+        android:text="@string/backup"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+         android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/btn_backup"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:text="@string/backup_contact_tv_1"
+        android:textColor="@color/tip_color"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_restore"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/tv_1"
+        android:layout_height="45dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/register_btn_selector"
+        android:text="@string/restore"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_below="@id/btn_restore"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="@string/backup_contact_tv_2"
+        android:textColor="@color/tip_color"
+        android:textSize="12sp" />
+
+</RelativeLayout>

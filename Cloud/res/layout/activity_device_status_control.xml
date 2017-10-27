@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mycloud="http://schemas.android.com/apk/res/com.gvtv.android.cloud"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.gvtv.android.cloud.view.TitleView
+        android:id="@+id/deviceControlTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        mycloud:right_visibility="false"
+        mycloud:title="@string/device_control_state" >
+    </com.gvtv.android.cloud.view.TitleView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/device_space"
+        android:textColor="@color/tip_color"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/about_line_color" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.gvtv.android.cloud.view.PercentBar
+            android:id="@+id/percentView"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="25dp"
+            mycloud:max="100"
+            mycloud:percentTextSize="15sp"
+            mycloud:roundWidth="2.5dp"
+            android:visibility="invisible" />
+        
+        <ImageView
+            android:id="@+id/per_default"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="25dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/equipment_pic01" />
+
+        <TextView
+            android:id="@+id/allSizeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/percentView"
+            android:text="@string/all_size"
+            android:textColor="@color/tip_color"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/usedFlagView"
+            android:layout_width="14.5dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/allSizeText"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/percentView"
+            android:background="@color/use_space_flag_color" />
+
+        <View
+            android:id="@+id/availableFlagView"
+            android:layout_width="14.5dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/usedFlagView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/percentView"
+            android:background="@color/avail_space_flag_color" />
+
+        <TextView
+            android:id="@+id/usedSizeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/usedFlagView"
+            android:layout_alignLeft="@+id/allSizeText"
+            android:layout_alignTop="@+id/usedFlagView"
+            android:layout_toRightOf="@+id/percentView"
+            android:gravity="center_vertical"
+            android:text="@string/used_size"
+            android:textColor="@color/email_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/availableSizeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/availableFlagView"
+            android:layout_alignLeft="@+id/allSizeText"
+            android:layout_alignTop="@+id/availableFlagView"
+            android:layout_toRightOf="@+id/percentView"
+            android:gravity="center_vertical"
+            android:text="@string/available_size"
+            android:textColor="@color/tip_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/device_control"
+        android:textColor="@color/tip_color"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/about_line_color" />
+
+    <Button
+        android:id="@+id/solidUpdateBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_btn_selector"
+        android:text="@string/solid_update"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <FrameLayout
+        android:id="@+id/restartLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/restartBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:background="@drawable/register_btn_selector"
+            android:text="@string/restart_device"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="103.5dp"
+            android:background="@drawable/public_arrow02" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/recoveryBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bind_btn_selector"
+        android:text="@string/recovery"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>

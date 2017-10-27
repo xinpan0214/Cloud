@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <FrameLayout
+        android:id="@+id/flyt_navi_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/tab_bg_color"
+        android:visibility="visible" >
+
+        <RadioGroup
+                android:id="@+id/editDownloadingGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/download_retry"
+                    android:textColor="@drawable/tab_selector"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+
+                <RadioButton
+                    android:id="@+id/rbtn_pause_ing"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/pause"
+                    android:textColor="@drawable/tab_selector"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:checked="true"
+                    android:background="@color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/rbtn_continue_ing"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/go_on"
+                    android:textColor="@drawable/tab_selector"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:background="@color/transparent" />
+                
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/delete"
+                    android:textColor="@drawable/tab_selector"
+                    android:textSize="15sp"
+					android:layout_weight="1"
+					android:visibility="invisible"/>
+
+                <RadioButton
+                    android:id="@+id/rbtn_delete"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/delete"
+                    android:textColor="@drawable/tab_del_selector"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:background="@color/transparent"/>
+            </RadioGroup>
+        <View
+            android:id="@+id/uncheckedLine_download"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="bottom"
+            android:background="@color/tab_unchecked_color" />
+        
+        <View
+            android:id="@+id/checkedLine_download"
+            android:layout_width="72dp"
+            android:layout_height="2dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="72dp"
+            android:background="@color/tab_checked_color" />
+    </FrameLayout>
+    
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="pullFromStart" >
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+    <ExpandableListView
+        android:id="@+id/lv_downloading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="false"
+        android:drawSelectorOnTop="false"
+        android:focusable="false"
+        android:groupIndicator="@null"
+        android:listSelector="@android:color/transparent"
+        android:visibility="visible" />
+    </LinearLayout>
+    
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+    
+    
+
+    <TextView
+        android:id="@+id/tv_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/no_data"
+        android:gravity="center"
+        android:visibility="visible" />
+
+</LinearLayout>

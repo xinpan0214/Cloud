@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginLayout"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="70dp" >
+    
+    <RelativeLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="70dp" >
+
+    <CheckBox
+        android:id="@+id/groupcheckbox"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/checkbox_selector"
+        android:button="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/appicon"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/groupcheckbox"
+        android:background="@drawable/login_logo"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="9dp"
+        android:layout_toRightOf="@+id/appicon"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:textColor="@color/email_color"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/expandablebtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/public_arrow01_01"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gvtv.android.cloud"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS"/>
+	<uses-permission android:name="android.permission.WRITE_SMS"/>
+
+    <application
+        android:name=".CloudApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:icon="@drawable/icon"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".activity.GuideActivity"
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+         <activity android:name=".activity.FindPWDActivity"
+             android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".activity.FileManagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        
+        <activity android:name=".activity.FileFolderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity android:name=".activity.FileActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".activity.BackupActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".activity.SearchDeviceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".activity.SearchFromDeviceActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".activity.DownloadManagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+         <activity android:name=".activity.AppStoreActivity"
+             android:screenOrientation="portrait" >
+        </activity>
+         <activity android:name=".activity.SearchAppActivity"
+             android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity android:name=".activity.AppClassifyActivity"
+             android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".activity.CloudManagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".activity.UserInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".activity.AboutInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity android:name=".activity.ChangePaswdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".activity.DeviceBindActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity android:name=".activity.DeviceControlActivity"
+             android:screenOrientation="portrait" >
+        </activity>
+        
+         <activity android:name=".activity.DeviceStatusControlActivity"
+             android:screenOrientation="portrait" >
+        </activity>
+        
+         <activity android:name=".activity.DownloadSettingActivity"
+             android:screenOrientation="portrait" >
+        </activity>
+        
+          <activity android:name=".activity.DeviceRebootActivity"
+             android:screenOrientation="portrait" >
+        </activity>
+        
+         <activity android:name=".activity.APPDetailActivity"
+             android:screenOrientation="portrait" >
+        </activity>
+         
+         <activity android:name=".activity.APPActivity"
+             android:screenOrientation="portrait" >
+        </activity>
+        
+        <receiver android:name="com.gvtv.android.cloud.broadcast.MessageReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.gvtv.android.cloud.MSGRECV_ACTION" />
+            </intent-filter>
+        </receiver>
+        
+        <service
+            android:enabled="true"
+            android:name="com.gvtv.android.cloud.service.MessageService" />
+        
+        <provider
+            android:name="com.gvtv.android.cloud.provider.AppContentProvider" 
+            android:authorities="com.gvtv.android.cloud.provider.AppContentProvider"></provider>
+        
+    </application>
+
+</manifest>

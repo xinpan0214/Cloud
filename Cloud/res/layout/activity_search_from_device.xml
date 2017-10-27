@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mycloud="http://schemas.android.com/apk/res/com.gvtv.android.cloud"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.gvtv.android.cloud.view.TitleView
+        android:id="@+id/searchTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        mycloud:right_visibility="false"
+        mycloud:title="@string/search" >
+    </com.gvtv.android.cloud.view.TitleView>
+
+    <RelativeLayout
+        android:id="@+id/rlye_search"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/input_edit_selector"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:id="@+id/et_searchkey"
+            android:layout_width="213dp"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/search"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_color"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="213dp"
+            android:contentDescription="@string/app_name"
+            android:clickable="true"
+            android:src="@drawable/public_cha" />
+
+    </RelativeLayout>
+    
+    <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="285dp"
+        	android:layout_marginTop="88dp"
+            android:contentDescription="@string/app_name"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/search_selector"/>
+
+    <TextView
+        android:id="@+id/tv_search_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/rlye_search"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/search_result"
+        android:textColor="@color/avail_space_percent_color"
+        android:textSize="15sp" />
+    
+    <View
+        android:id="@+id/space" 
+        android:layout_width="fill_parent"
+        android:layout_below="@id/tv_search_result"
+        android:layout_height="2dp"
+        android:background="@color/line_color"/>
+    
+    <TextView
+        android:id="@+id/tv_no_result_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/space"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/search_no_result"
+        android:textColor="@color/hint_color"
+        android:textSize="@dimen/main_tv_text_size" />
+    
+    <com.gvtv.android.cloud.view.xlistview.XListView 
+        android:id="@+id/lv_search_result"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/space"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/devider_color"
+        android:dividerHeight="1dp"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false">
+        
+    </com.gvtv.android.cloud.view.xlistview.XListView>
+</RelativeLayout>

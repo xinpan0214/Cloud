@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mycloud="http://schemas.android.com/apk/res/com.gvtv.android.cloud"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <com.gvtv.android.cloud.view.TitleView
+        android:id="@+id/mainTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        mycloud:right_visibility="true"
+        mycloud:title="@string/bind_device" >
+    </com.gvtv.android.cloud.view.TitleView>
+
+    <TextView
+        android:id="@+id/deviceAccountText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:text="@string/account_display"
+        android:textColor="@color/tab_text_checked_color"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="242dp"
+        android:layout_height="157dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_logo" />
+
+    <Button
+        android:id="@+id/bindBtn"
+        android:layout_width="@dimen/main_btn_width"
+        android:layout_height="@dimen/main_btn_height"
+        android:layout_marginTop="@dimen/main_login_btn_margin_top"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/login_btn_selector"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_btn_text_size" />
+
+    <TextView
+        android:id="@+id/tv_tips_1"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="@string/cannot_use_device"
+        android:textColor="@color/tip_color"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="@dimen/main_btn_width"
+        android:layout_height="@dimen/main_btn_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/register_btn_selector"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_btn_text_size" />
+
+    <TextView
+        android:id="@+id/tv_tips_2"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="@string/register_tip"
+        android:textColor="@color/tip_color"
+        android:textSize="12sp" />
+
+</LinearLayout>

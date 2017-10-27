@@ -1,0 +1,310 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mycloud="http://schemas.android.com/apk/res/com.gvtv.android.cloud"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.gvtv.android.cloud.view.TitleView
+        android:id="@+id/deviceControlTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        mycloud:right_visibility="false"
+        mycloud:title="@string/device_control" >
+    </com.gvtv.android.cloud.view.TitleView>
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/deviceControlTitle"
+        android:background="@color/tab_bg_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="@string/cloud_device"
+        android:textColor="@color/email_color"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tv_1"
+        android:background="@color/hint_color" />
+
+    <RelativeLayout
+        android:id="@+id/rlyt_2"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/line1" >
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="@string/device_control_state"
+            android:textColor="@color/email_color"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/public_arrow01_01"
+            android:layout_marginRight="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/rlyt_2"
+        android:background="@color/about_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/rlyt_3"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/line2">
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="@string/download_setting"
+            android:textColor="@color/email_color"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_3"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/public_arrow01_01"
+            android:layout_marginRight="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/rlyt_3"
+        android:background="@color/about_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/rlyt_4"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/line3" >
+
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="@string/device_bind"
+            android:textColor="@color/email_color"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_4"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/public_arrow01_01"
+            android:layout_marginRight="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/rlyt_4"
+        android:background="@color/about_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/rlyt_5"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/line4"
+        android:background="@color/tab_bg_color" >
+
+        <TextView
+            android:id="@+id/tv_5"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="@string/mobile_setting"
+            android:textColor="@color/email_color"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/line5"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/rlyt_5"
+        android:background="@color/hint_color" />
+
+   <RelativeLayout
+        android:id="@+id/rlyt_6"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/line5" >
+
+        <TextView
+            android:id="@+id/tv_6"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="@string/message_remind"
+            android:textColor="@color/filemanager_txt_sel"
+            android:textSize="15sp"
+            android:enabled="false" />
+
+        <ToggleButton
+            android:id="@+id/rbtn_6"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/checkbox_selector"
+            android:layout_marginRight="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:button="@null"
+            android:textOn=""
+            android:textOff=""
+            android:checked="false"
+            android:enabled="false"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line6"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/rlyt_6"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:id="@+id/rlyt_7"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/line6" >
+
+        <TextView
+            android:id="@+id/tv_7"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="@string/contacts_allow"
+            android:textColor="@color/email_color"
+            android:textSize="15sp" />
+
+        <ToggleButton
+            android:id="@+id/rbtn_7"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/checkbox_selector"
+            android:layout_marginRight="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:button="@null"
+            android:textOn=""
+            android:textOff=""
+            android:checked="true"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line7"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/rlyt_7"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:id="@+id/rlyt_8"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/line7" >
+
+        <TextView
+            android:id="@+id/tv_8"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="@string/account_manager"
+            android:textColor="@color/email_color"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_8"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/public_arrow01_01"
+            android:layout_marginRight="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line8"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/rlyt_8"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:id="@+id/rlyt_9"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/line8" >
+
+        <TextView
+            android:id="@+id/tv_9"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="@string/about"
+            android:textColor="@color/email_color"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_9"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/public_arrow01_01"
+            android:layout_marginRight="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line9"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/rlyt_9"
+        android:background="@color/line_color" />
+
+</RelativeLayout>

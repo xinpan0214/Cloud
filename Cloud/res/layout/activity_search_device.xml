@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mycloud="http://schemas.android.com/apk/res/com.gvtv.android.cloud"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.gvtv.android.cloud.view.TitleView
+        android:id="@+id/searchDeviceTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        mycloud:right_visibility="true"
+        mycloud:title="@string/bind_device" >
+    </com.gvtv.android.cloud.view.TitleView>
+
+    <TextView
+        android:id="@+id/deviceAccountText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:text="@string/account_display"
+        android:textColor="@color/tab_text_checked_color"
+        android:textSize="15sp" />
+
+    <FrameLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="88.5dp"
+        android:layout_marginRight="88.5dp"
+        android:layout_marginTop="25dp" >
+
+        <TextView
+            android:id="@+id/searchText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:background="@drawable/bdsb_quan01"
+            android:text="@string/search_again"
+            android:textColor="@color/email_color"
+            android:textSize="15sp" />
+
+        <com.gvtv.android.cloud.view.SearchAnim
+            android:id="@+id/searchAnim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bdsb_quan02" />
+
+    </FrameLayout>
+	<FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp" >
+
+        <ListView
+            android:id="@+id/deviceList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/devider_color"
+            android:dividerHeight="1dp"
+            android:scrollbars="none" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/unFindText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/unfind_device"
+            android:textColor="@color/tip_color"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- activity_main -->
+	<dimen name="main_logo_margin_top">120dp</dimen>
+	<dimen name="main_logo_height">157dp</dimen>
+	<dimen name="main_logo_width">242dp</dimen>
+	<dimen name="main_login_btn_margin_top">50dp</dimen>
+	<dimen name="main_btn_height">45dp</dimen>
+	<dimen name="main_btn_width">250dp</dimen>
+	<dimen name="main_text_margin_top">20dp</dimen>
+	<dimen name="main_text_margin_bottom">15dp</dimen>
+	<dimen name="main_btn_text_size">15sp</dimen>
+	<dimen name="main_tv_text_size">12sp</dimen>
+	
+	<!-- title_view -->
+	<dimen name="title_view_height">48dp</dimen>
+	<dimen name="title_view_backText_height">36dp</dimen>
+	<dimen name="title_view_backText_width">36dp</dimen>
+	<dimen name="title_view_btn_height">30dp</dimen>
+	<dimen name="title_view_btn_width">60dp</dimen>
+	<dimen name="title_view_btn_margin_right">12dp</dimen>
+	<dimen name="title_view_titleText_size">15sp</dimen>
+	<dimen name="title_view_btn_text_size">12sp</dimen>
+	<!-- activity_login -->
+	<dimen name="login_logo_margin_top">120dp</dimen>
+	
+	<dimen name="text_15sp">15sp</dimen>
+	<dimen name="text_12sp">12sp</dimen>
+</resources>

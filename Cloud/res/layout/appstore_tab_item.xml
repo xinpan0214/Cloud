@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+        xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:id="@+id/appstore_tab_textview"
+    	android:layout_width="75dp"
+    	android:layout_height="30dp"
+    	android:textSize="15sp"
+    	android:gravity="center"
+    	android:textColor="@color/appstore_tab_txt_sel"
+    	android:background="@drawable/appstore_tab_bg_sel"
+    	android:maxLines="1"/>
